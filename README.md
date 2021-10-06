@@ -2,6 +2,8 @@
 
 ## Preamble
 
+> ⚒️ CURRENTLY UNDER CONSTRUCTION ⚒️
+
 To ensure reproducibility and readability within bioinformatics projects, we propose the following project repository structure. 
 
 This structure we hope will make it easier for other researchers to more easily follow how data was processed and analyses were performed.
