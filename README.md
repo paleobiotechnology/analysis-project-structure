@@ -2,6 +2,8 @@
 
 ## Preamble
 
+> ⚒️ CURRENTLY UNDER CONSTRUCTION ⚒️
+
 To ensure reproducibility and readability within bioinformatics projects, we propose the following project repository structure.
 
 This structure we hope will make it easier for other researchers to more easily follow how data was processed and analyses were performed.
@@ -49,6 +51,18 @@ Ultimately, write and structure everything with the vision that you are another 
 
 ### Overall
 
+The overall structure is as in the tree structure below, with the main top-level folders listed in numerical order, alongside a main repository README and a couple of additional useful files.
+
+The main folders are as follows:
+
+- `01-documentation`: 
+- `02-scripts`:
+- `03-data`:
+- `04-analysis`:
+- `05-results`:
+- `06-reports`:
+- `07-publication`:
+
 <!-- usage of READMES in each major folder -->
 
 ```bash
@@ -69,11 +83,11 @@ README.md                      ## Main description each directory
     └──<database_1>/
 04-analysis/                   ## symlinks OR just relative paths, doesn't go to github either(!)
 ├──analysis_1/                 ## But all final results files, results figures, for downstream analyses or publication, COPIED into results
-│  ├──substep
-│  └──substep
+│  ├──sub-step
+│  └──sub-step
 └──analysis_2/
-   ├──substep
-   └──substep
+   ├──sub-step
+   └──sub-step
 05-results/                    ## all FINAL results files, results figures, for downstream analyses or publication, COPIED into results
 ├──ANA-final_file.tsv
 ├──ANA-final_file.Rdata
@@ -88,7 +102,7 @@ README.md                      ## Main description each directory
    ├──final_rmarkdown_figures/
    ├──final_rmarkdown.Rmd
    └──final_rmarkdown.html
-07-publication/                ## Optional, could be written in bookkdown for nice rendering
+07-publication/                ## Optional, could be written in bookdown for nice rendering
 ├──figures
 ├──supplementary_figures/
 ├──supplementary_files/
@@ -131,4 +145,4 @@ For safety, we also recommend adding the following file formats to `.gitignore`,
 
 It is critical, however, that all files can be reconstructed. This comes through having highly descriptive, easy-to-follow, and reproducible notebooks and scripts.
 
-Furthermore, we recommend providing sufficient information or automated scripts available at publication that allows a user to download the raw data uploaded to public repositories (such as the ENA or SRA for (meta)genomics) and replicates the repository structure of ignored directories that was on the original machine used for analysis
+Furthermore, we recommend providing sufficient information or automated scripts available at publication that allows a user to download the raw data uploaded to public repositories (such as the ENA or SRA for (meta)genomics) and replicates the repository structure of ignored directories that was on the original machine used for analysis.
