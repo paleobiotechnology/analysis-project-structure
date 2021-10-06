@@ -1,0 +1,13 @@
+
+## You can use this file, or make multiple files, to create a conda environment for this project:
+##   conda env create -f environment.yml
+name: NAME_OF_PROJECT_UPDATE_ME
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  ## Feel free to update versions or remove these example dependencies
+  - conda-forge::python=3.9.4
+  - conda-forge::r-base=4.1.1
+  - bioconda::samtools=1.13

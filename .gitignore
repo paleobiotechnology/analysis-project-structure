@@ -1,3 +1,7 @@
+################
+## R SPECIFIC ##
+################
+
 # History files
 .Rhistory
 .Rapp.history
@@ -37,3 +41,25 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+######################
+## PROJECT SPECIFIC ##
+######################
+
+03-data/
+04-analysis/
+**/*.bam
+**/*.sam.gz
+**/*.sam
+**/*.fastq.gz
+**/*.fq.gz
+**/*.fastq
+**/*.fq
+**/*.fasta.gz
+**/*.fna.gz
+**/*.fa.gz
+**/*.fasta
+**/*.fna
+**/*.fa
+
+
