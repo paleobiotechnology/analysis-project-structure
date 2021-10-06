@@ -185,4 +185,3 @@ These scripts and notebooks should only use relative links to refer to input and
 File names should be descriptive so readers can find relevant files. Abbreviations or acronyms are not recommended, as these are often difficult to understand what they mean for people not intimately involved in the project.
 
 ## 03-data
-
