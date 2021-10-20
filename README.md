@@ -1,5 +1,26 @@
 # Opinionated Bioinformatics Project Directory Structure
 
+<!-- TOC depthto:3 -->
+
+- [Opinionated Bioinformatics Project Directory Structure](#opinionated-bioinformatics-project-directory-structure)
+	- [Preamble](#preamble)
+	- [General Organisation](#general-organisation)
+	- [Structure](#structure)
+		- [Overall](#overall)
+		- [Repository main README.md](#repository-main-readmemd)
+		- [Repository .gitignore](#repository-gitignore)
+		- [.conda_environment.yml](#conda_environmentyml)
+	- [Directory Descriptions](#directory-descriptions)
+		- [01-documentation/](#01-documentation)
+		- [02-scripts/](#02-scripts)
+		- [03-data/](#03-data)
+		- [04-analysis](#04-analysis)
+		- [05-results/](#05-results)
+		- [06-reports/](#06-reports)
+		- [07-publication](#07-publication)
+
+<!-- /TOC -->
+
 ## Preamble
 
 > ⚒️ CURRENTLY UNDER CONSTRUCTION ⚒️
@@ -111,7 +132,6 @@ conda_environment.yml
 ```
 
 An important component of this structure to note is within  scripts, results, and reports, that files are prefixed with short three or four letter codes in all capitals (e.g. QUAL, ANA). This indicates batches of files that are all related to a single analysis component or question that is addressed in the project. These prefixes can also be replaced with specific directories instead. The purpose of this structure is to make it easier for readers to rapidly find scripts of interest, and possible scripts of interest. This system is preferable over, e.g., numbering as it allows more flexibility in case analysis components change in order in the final publication, or morph and merge.
-
 ### Repository main `README.md`
 
 This markdown (`.md`) file acts as the main description of the repository as a whole.
@@ -166,7 +186,9 @@ Note that you may need to update this overtime, as you add more analyses. If thi
 
 > ⚠️ In large projects with many software, you may end up getting dependency conflicts, where two software require two different versions of the same software. In such a case we recommend splitting up the conda environment into multiple for each component.
 
-## `01-documentation/`
+## Directory Descriptions
+
+### `01-documentation/`
 
 This directory contains primarily files that you need before you can do any analyses. This often includes files that contain information of wet lab processing of new samples, or metadata files of publicly available datasets used as comparative datasets.
 
@@ -174,7 +196,7 @@ In addition, we recommend on final publication of the project, placing in this d
 
 Most of these files will be simple text files, in tabular format such as CSV, TSV, XLSX, or TXT files.
 
-## `02-scripts/`
+### `02-scripts/`
 
 This contains all scripts and notebooks used in the 'day-to-day' analysis of the project. All of these scripts/notebooks produce both intermediate and final files used in the analysis of the project.
 
@@ -184,7 +206,7 @@ These scripts and notebooks should only use relative links to refer to input and
 
 File names should be descriptive so readers can find relevant files. Abbreviations or acronyms are not recommended, as these are often difficult to understand what they mean for people not intimately involved in the project.
 
-## `03-data/`
+### `03-data/`
 
 This directory directory contains all raw data, and/or initial pre-processed data that would be repeatedly used as input into downstream analyses. This can also include databases and other very large, unmodifiable, and reusable files.
 
@@ -194,23 +216,23 @@ We recommend to split such a directory such as you separate newly generated data
 
 Recommended subdirectories with descriptions are described below.
 
-### `raw_dat/`
+#### `raw_data/`
 
 Includes unpublished raw data generated for the project. For (meta)genomics We recommend organising it in the form one sub-directory within `raw_data` per sequencing library (e.g. all FASTQs of all lanes of the same library from the same run, both R1 and R2, would all be in one sub-directory). Sequencing data in here will often still have adapters and other artefacts.
 
-### `published_data/`
+#### `published_data/`
 
 Includes previously published data, such as comparative datasets that are downloaded from public repositories (such as ENA/SRA for (meta)genomics). These should be organised similarly as `raw_data`, however may contain partially processed data (e.g. already adapter clipped).
 
 It is important the exact version of the data, date, and command that was used to download such data is recorded in `01-documentation`, for example in a metadata sheet. Tables that can be downloaded frm such as from the ENA or SRA web browser(s) can be useful for this.
 
-### `reference_genomes/`
+#### `reference_genomes/`
 
 For (meta)genomics, often analysts will compare DNA seuqencing reads against a reference genome. Reference genome sequences are often stored in text formats such as `fasta`, alongside additional auxillary files such as annotation files. These should also be placed here, again with a suggestion of one per organism. Often these are downloaded from the NCBI Genome database.
 
 It is important the exact version of the data, date, and command that was used to download such data is recorded in `01-documentation`, for example in a metadata sheet. Particularly important is the specific assembly or accession number of a given genome is recorded, as these can be updated over time at (and sometimes removed).
 
-### `databases/`
+#### `databases/`
 
 In addition to large sequencing files, particularly for metagenomics, tools require large database files consisting of hundreds and thousands of reference genomes. Such database directories and/or files should be stored in this directory, with a recommendation of having one sub-directory per tool, and then within this, the different types databases that maybe used in downstream analysis.
 
@@ -218,7 +240,7 @@ In some cases you may have two variants of this, one with 'raw' files, and anoth
 
 In `01-documentation/` it should recorded where/how each database was downloaded, and if manually indexed, the corresponding script should be recorded in `02-scripts`.
 
-## `04-analysis`
+### `04-analysis`
 
 This directory contains the bulk of the analysis carried out in the project.
 
@@ -228,7 +250,7 @@ Due to this directory being the main working directory for most of the project, 
 
 Either symbolic links or relative paths should be used to link the output of one tool as input to another tool (i.e., do NOT copy these files). _However_, once an analysis is finalised and will not be ran again - the final and relevant output files should be _copied_ into `05-results/`, as these _will_ be uploaded to the online Git repository.
 
-## `05-results/`
+### `05-results/`
 
 This directory contains all the final files generated in `04-analysis` (copied over), and will be the main files that can be referred to in the final publication supplementary information. These should consist of tables, text files, and **small** binary files that are important for understanding the interpretations made in the final publication.
 
@@ -238,7 +260,7 @@ We recommend structuring this section either by sub-directories, or file prefixe
 
 For example, there could be a quality control set of files indicated with the key `QUAL` which consists of all relevant log files and metric tables that describe the outcome of preprocessing of sequencing data. A second analysis section could be for phylogenetic analyses, which would be indicated with `PHYLO`.
 
-## `06-reports/`
+### `06-reports/`
 
 This is an recommended directory that contains document or file that can be useful for summarising main results, including interpretation, and ultimately can be used to help inform the writing of the final publication. This will be uploaded to the online git repository.
 
@@ -248,7 +270,7 @@ It is also recommended to organise these in analysis-batch specific directories 
 
 These reports or notebooks can go into more technical detail that any file for the final publication, including describing explorations and/or failures for future prosperity. Not all the contents of these reports will necessary go into the `07-publication` directory.
 
-## `07-publication`
+### `07-publication`
 
 This optional directory can contain copies of all the final files used in for actual publication itself. One could consider this directory as a duplicate of the files uploaded to a publishers website, i.e. main figure files, supplementary figure files, official supplementary files, and possibly also the final paper itself.
 
