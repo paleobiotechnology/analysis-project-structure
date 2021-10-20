@@ -1,29 +1,31 @@
 # Opinionated Bioinformatics Project Directory Structure
 
-<!-- TOC depthto:3 -->
+> ⚒️ CURRENTLY UNDER CONSTRUCTION ⚒️
+## Table of Contents
 
-- [Opinionated Bioinformatics Project Directory Structure](#opinionated-bioinformatics-project-directory-structure)
-	- [Preamble](#preamble)
-	- [General Organisation](#general-organisation)
-	- [Structure](#structure)
-		- [Overall](#overall)
-		- [Repository main README.md](#repository-main-readmemd)
-		- [Repository .gitignore](#repository-gitignore)
-		- [.conda_environment.yml](#conda_environmentyml)
-	- [Directory Descriptions](#directory-descriptions)
-		- [01-documentation/](#01-documentation)
-		- [02-scripts/](#02-scripts)
-		- [03-data/](#03-data)
-		- [04-analysis](#04-analysis)
-		- [05-results/](#05-results)
-		- [06-reports/](#06-reports)
-		- [07-publication](#07-publication)
+<!-- TOC depthfrom:2 depthto:3 -->
+
+- [Table of Contents](#table-of-contents)
+- [Preamble](#preamble)
+- [General Organisation](#general-organisation)
+- [Structure](#structure)
+	- [Overall](#overall)
+	- [Repository main README.md](#repository-main-readmemd)
+	- [Repository .gitignore](#repository-gitignore)
+	- [.conda_environment.yml](#conda_environmentyml)
+- [Directory Descriptions](#directory-descriptions)
+	- [01-documentation/](#01-documentation)
+	- [02-scripts/](#02-scripts)
+	- [03-data/](#03-data)
+	- [04-analysis](#04-analysis)
+	- [05-results/](#05-results)
+	- [06-reports/](#06-reports)
+	- [07-publication](#07-publication)
 
 <!-- /TOC -->
 
 ## Preamble
 
-> ⚒️ CURRENTLY UNDER CONSTRUCTION ⚒️
 
 To ensure reproducibility and readability within bioinformatics projects, we propose the following project repository structure.
 
