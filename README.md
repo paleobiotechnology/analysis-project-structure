@@ -202,7 +202,7 @@ Most of these files will be simple text files in tabular format, such as CSV, TS
 
 This contains all scripts and notebooks used in the 'day-to-day' analysis of the project. All of these scripts/notebooks produce both intermediate and final files used in the analysis of the project.
 
-These can be things such as simple shell/bash scripts (`.sh`), python (`.py`), or R (`.R`) scripts, or notebooks such as RMarkdown/Notebooks (`.Rmd`) or Jupyter notebooks (`.iypnb`). It is optional how this is structured internally, whether by analysis component prefixes, directories per analysis component, or by programming language.
+These can be things such as simple shell/bash scripts (`.sh`), python (`.py`), or R (`.R`) scripts, or notebooks such as RMarkdown/Notebooks (`.Rmd`) or Jupyter notebooks (`.ipynb`). It is optional how this is structured internally, whether by analysis component prefixes, directories per analysis component, or by programming language.
 
 These scripts and notebooks should only use relative links to refer to input and output files present in the directory, and not to point to anything else present on your given machine or infrastructure.
 
