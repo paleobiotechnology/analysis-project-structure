@@ -1,27 +1,16 @@
 # Opinionated Bioinformatics Project Directory Structure
 
-![](https://img.shields.io/badge/Version-1.0.0-brightgreen?style=for-the-badge)
+![Version Badge](https://img.shields.io/badge/Version-1.0.0-brightgreen?style=for-the-badge)
 
 ## Table of Contents
 
-<!-- TOC depthfrom:2 depthto:3 -->
+<!-- TOC depthfrom:2 depthto:2 -->
 
 - [Table of Contents](#table-of-contents)
 - [Preamble](#preamble)
 - [General Organisation](#general-organisation)
 - [Structure](#structure)
-	- [Overall](#overall)
-	- [Repository main README.md](#repository-main-readmemd)
-	- [Repository .gitignore](#repository-gitignore)
-	- [.conda_environment.yml](#conda_environmentyml)
 - [Directory Descriptions](#directory-descriptions)
-	- [01-documentation/](#01-documentation)
-	- [02-scripts/](#02-scripts)
-	- [03-data/](#03-data)
-	- [04-analysis](#04-analysis)
-	- [05-results/](#05-results)
-	- [06-reports/](#06-reports)
-	- [07-publication](#07-publication)
 
 <!-- /TOC -->
 
@@ -132,6 +121,7 @@ conda_environment.yml
 ```
 
 An important component of this structure to note is within  scripts, results, and reports, that files are prefixed with short three or four letter codes in all capitals (e.g. QUAL, ANA). This indicates batches of files that are all related to a single analysis component or question that is addressed in the project. These prefixes can also be replaced with specific directories instead. The purpose of this structure is to make it easier for readers to rapidly find scripts of interest, and possible scripts of interest. This system is preferable over, e.g., numbering as it allows more flexibility in case analysis components change in order in the final publication, or morph and merge.
+
 ### Repository main `README.md`
 
 This markdown (`.md`) file acts as the main description of the repository as a whole.
