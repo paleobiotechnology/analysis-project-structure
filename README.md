@@ -1,6 +1,6 @@
-# Opinionated Bioinformatics Project Directory Structure
+# Cookiecutter Bioinformatics project
 
-![Version Badge](https://img.shields.io/badge/Version-1.0.1-brightgreen?style=for-the-badge)
+![Version Badge](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge)
 
 ## Table of Contents
 
@@ -19,6 +19,16 @@
 To ensure reproducibility and readability within bioinformatics projects, we propose the following project repository structure. We hope that it will allow other researchers to easily follow how data was processed and analyses were performed.
 
 This structure has been developed out of (meta)genomics projects, however it should be generic enough for other fields to adopt.
+
+## How to install
+
+To use this bioinformatics project skeleton, you will need to use [Cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/first_steps.html). Head over to the [Cookiecutter documentation for installation instructions](https://cookiecutter.readthedocs.io/en/1.7.2/installation.html), we recommend you to use conda.
+
+Once Cookiecutter is installed, it's just a matter of 
+
+```bash
+$ cookiecutter https://github.com/maxibor/analysis-project-structure
+```
 
 ## General Organisation
 

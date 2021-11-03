@@ -1,7 +1,7 @@
 
 ## You can use this file, or make multiple files, to create a conda environment for this project:
 ##   conda env create -f environment.yml
-name: NAME_OF_PROJECT_UPDATE_ME
+name: {{cookiecutter.project_name}}
 channels:
   - conda-forge
   - bioconda
