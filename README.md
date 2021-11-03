@@ -1,5 +1,7 @@
 # Opinionated Bioinformatics Project Directory Structure
 
+![](https://img.shields.io/badge/Version-1.0.0-brightgreen?style=for-the-badge)
+
 ## Table of Contents
 
 <!-- TOC depthfrom:2 depthto:3 -->
