@@ -1,6 +1,7 @@
 # Opinionated Bioinformatics Project Directory Structure
 
-> ⚒️ CURRENTLY UNDER CONSTRUCTION ⚒️
+![](https://img.shields.io/badge/Version-1.0.0-brightgreen?style=for-the-badge)
+
 ## Table of Contents
 
 <!-- TOC depthfrom:2 depthto:3 -->
@@ -25,7 +26,6 @@
 <!-- /TOC -->
 
 ## Preamble
-
 
 To ensure reproducibility and readability within bioinformatics projects, we propose the following project repository structure. We hope that it will allow other researchers to easily follow how data was processed and analyses were performed.
 
