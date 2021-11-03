@@ -27,7 +27,7 @@ To use this bioinformatics project skeleton, you will need to use [Cookiecutter]
 Once Cookiecutter is installed, it's just a matter of 
 
 ```bash
-$ cookiecutter https://github.com/maxibor/analysis-project-structure
+cookiecutter https://github.com/paleobiotechnology/analysis-project-structure
 ```
 
 ## General Organisation
