@@ -1,6 +1,5 @@
 # Opinionated Bioinformatics Project Directory Structure
 
-> ⚒️ CURRENTLY UNDER CONSTRUCTION ⚒️
 ## Table of Contents
 
 <!-- TOC depthfrom:2 depthto:3 -->
@@ -25,7 +24,6 @@
 <!-- /TOC -->
 
 ## Preamble
-
 
 To ensure reproducibility and readability within bioinformatics projects, we propose the following project repository structure.
 
