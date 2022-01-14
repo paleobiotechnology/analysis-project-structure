@@ -9,4 +9,3 @@
 ## Authors
 
 {{cookiecutter.authors}}
-
