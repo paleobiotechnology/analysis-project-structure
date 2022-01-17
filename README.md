@@ -1,4 +1,4 @@
-# Cookiecutter opinionated Bioinformatics project
+# Cookiecutter opinionated bioinformatics project structure
 
 ![Version Badge](https://img.shields.io/badge/Version-1.0.2-brightgreen?style=for-the-badge)
 
