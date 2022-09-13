@@ -30,6 +30,18 @@ Once Cookiecutter is installed, it's just a matter of:
 cookiecutter https://github.com/paleobiotechnology/analysis-project-structure
 ```
 
+and follow the instructions!
+
+### Optional - converting to git repository
+
+To make it into a git repository you can store on github/gitlab, you change into the newly created directory and run
+
+```bash
+git init -b main
+```
+
+And then follow the instructions [here](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github) (either with `gh` or via the GitHub website + git)
+
 ## General Organisation
 
 The three main concepts for this structure is as follows:
